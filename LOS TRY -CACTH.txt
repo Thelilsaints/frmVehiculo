@@ -1,0 +1,25 @@
+TRY CLASE CAMION
+
+if (capacidadCarga > 30)
+throw new ArgumentOutOfRangeException("El camión no puede transportar más de 30 toneladas.");
+
+if (costoPorTonelada < 50)
+throw new ArgumentException("El costo por tonelada transportada no puede ser menor que $50.");
+
+TRY CLASE COCHE
+
+if (costoSeguro < 100 || costoSeguro > 2000)
+throw new ArgumentOutOfRangeException("El costo del seguro debe estar entre $100 y $2000.");
+
+TRY CLASE VEHICULO
+
+if (numeroDeRuedas < 2 || numeroDeRuedas > 18)
+throw new ArgumentOutOfRangeException("El número de ruedas debe estar entre 2 y 18.");
+
+if (costoPorKilometro <= 0)
+throw new ArgumentException("El costo por kilómetro debe ser mayor a 0.");
+
+TRY METODO DE LA CLASE VEHICULO
+
+if (Kilometraje < 0)
+throw new ArgumentException("El kilometraje no puede ser negativo.");
